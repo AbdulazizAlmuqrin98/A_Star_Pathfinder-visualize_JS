@@ -35,8 +35,8 @@ furthermore , the program now is ready to run again and visualize the algorithm.
 
 The develop team members:
 
-1	Ahmad Saad Alshobaiki		Leader
-2	Saif Abdullah Alshiban		Member
-3	Abdulaziz Ahmed Almuqrin		Member
-4	Khalid Alshahrani		Member
-5	Hesham Abed Almusallam	Member
+The Leader	Ahmad Saad Alshobaiki.	
+Developer:	Saif Abdullah Alshiban.	
+Developer:	Abdulaziz Ahmed Almuqrin.		
+Developer:	Khalid Alshahrani.
+Developer:	Hesham Abed Almusallam.
