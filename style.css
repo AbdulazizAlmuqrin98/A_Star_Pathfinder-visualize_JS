@@ -1,0 +1,189 @@
+
+
+#board_wrapper {
+  width: 30vw;
+  height: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttons_wrapper {
+  width: 100%;
+  height: 8vw;
+  background-color: none;
+  text-align: center;
+  color: rgb(70, 70, 70);
+}
+
+#top_buttons {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  font-size: 2vw;
+  box-shadow: 1px 1px 3px 0.5px grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#bottom_buttons {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 100%;
+  font-size: 1.5vw;
+  margin-top: 10px;
+  box-shadow: 1px 1px 3px 0.5px grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.disabled_btn {
+  opacity: 0.3;
+}
+
+.selected_btn {
+  background-color: rgb(83, 83, 83);
+  transition: all 0.5s;
+  color: white;
+}
+
+.unselected_btn {
+  background-color: white;
+  transition: all 0.5s;
+  color: rgb(83, 83, 83);
+}
+
+#run_btn {
+  padding: 5%;
+  border: none;
+  border-radius: 3px;
+}
+
+.unselected_btn:hover {
+  background-color: rgb(83, 83, 83);
+  color: white;
+}
+
+#clear_btn {
+  padding: 5%;
+  border: none;
+  border-radius: 3px;
+}
+
+#start_point_btn {
+  padding: 8%;
+  border: none;
+  border-radius: 3px;
+}
+
+#end_point_btn {
+  padding: 8%;
+  border: none;
+  border-radius: 3px;
+}
+
+#wall_point_btn {
+  padding: 8%;
+  border: none;
+  border-radius: 3px;
+}
+
+#board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
+  grid-template-rows: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
+  
+  border-radius: 5px;
+}
+
+.space {
+  border: 0.1px solid rgb(163, 163, 163);
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.space:hover {
+  background-color: rgb(222, 15, 15);
+  cursor: pointer;
+}
+
+.end_node_class {
+  background-color: rgb(215, 229, 13);
+}
+
+.start_node_class {
+  background-color: rgb(4, 166, 34);
+}
+
+.open_node_class {
+  background-color: greenyellow;
+}
+
+.closed_node_class {
+  animation-name: closedNode;
+  animation-duration: 1s;
+  background-color: rgb(255, 0, 0);
+}
+
+
+
+.wall_node_class {
+  background-color: rgb(46, 46, 46);
+}
+
+.final_path_node_class {
+  border: 1px solid grey;
+  
+  
+  background-color: rgb(97, 153, 255);
+}
+
+@keyframes finalNode {
+  0% {
+    background-color: rgb(97, 153, 255);
+  }
+  50% {
+    background-color: rgb(4, 90, 252);
+  }
+  100% {
+    background-color: rgb(97, 153, 255);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #board_wrapper {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  #buttons_wrapper {
+    width: 100%;
+    height: 50vw;
+    background-color: none;
+    text-align: center;
+    color: rgb(70, 70, 70);
+  }
+
+  #top_buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    font-size: 15vw;
+    box-shadow: 1px 1px 3px 0.5px grey;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #bottom_buttons {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100%;
+    font-size: 6vw;
+    margin-top: 10px;
+    box-shadow: 1px 1px 3px 0.5px grey;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
